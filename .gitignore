@@ -1,0 +1,27 @@
+# deps
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# env — NEVER commit real keys
+.env
+.env.local
+.env*.local
+
+# db
+prisma/migrations/dev.db*
+*.db
+
+# uploads (local dev only; production uses S3-compatible storage)
+apps/web/public/uploads/
+apps/web/.uploads/
+
+# local dev data (file-backed stores; production uses Postgres)
+apps/web/.data/
+
+# logs / os
+*.log
+.DS_Store
+Thumbs.db

@@ -1,0 +1,356 @@
+[
+  {
+    "id": "loktak-lake",
+    "name": "Loktak Lake",
+    "aliases": [
+      "Loktak"
+    ],
+    "category": "Lake",
+    "district": "Bishnupur",
+    "summary": "India's largest freshwater lake in the Northeast, known for floating phumdis and the Sangai deer habitat at Keibul Lamjao. Best experienced with a local boat operator; confirm timings and prices directly before travel.",
+    "tagline": "A floating world of phumdis on the Northeast’s largest lake.",
+    "lat": 24.55,
+    "lng": 93.82,
+    "coordSource": "seed-approx-WGS84 + nominatim-crosscheck 1.2km",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-loktak-01",
+        "fieldKey": "description",
+        "valueText": "Largest freshwater lake in Northeast India with floating phumdis.",
+        "valueInt": null,
+        "sourceTitle": "Manipur Tourism — Places to See",
+        "sourceUrl": "https://manipurtourism.gov.in",
+        "scope": "place",
+        "observedAt": null,
+        "reviewState": "approved"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/loktak-lake-1.jpg",
+        "caption": "Boats on Loktak Lake, the floating lake",
+        "attribution": "© Haoreima, CC BY 4.0, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABoats_%26_other_watercrafts_-_Inland_water_navigation_or_inland_waterway_transport_(IWT)_activities_in_the_Loktak_Lake_(alias_%22Meitei_Sea%22)_-_world%27s_only_floating_lake_-_in_Kangleipak_(Manipur)_06.jpg"
+      },
+      {
+        "storageKey": "/images/places/loktak-lake-2.jpg",
+        "caption": "Inland waterway activity on the lake",
+        "attribution": "© Haoreima, CC BY 4.0, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABoats_%26_other_watercrafts_-_Inland_water_navigation_or_inland_waterway_transport_(IWT)_activities_in_the_Loktak_Lake_(alias_%22Meitei_Sea%22)_-_world%27s_only_floating_lake_-_in_Kangleipak_(Manipur)_12.jpg"
+      }
+    ]
+  },
+  {
+    "id": "keibul-lamjao",
+    "name": "Keibul Lamjao National Park",
+    "aliases": [
+      "Keibul"
+    ],
+    "category": "National Park",
+    "district": "Bishnupur",
+    "summary": "The world's only floating national park, on Loktak Lake, and the last natural habitat of the endangered Sangai deer. Entry rules and sightings vary — check current guidance with officials or your host.",
+    "tagline": "The world’s only floating national park, home of the Sangai.",
+    "lat": 24.5,
+    "lng": 93.81,
+    "coordSource": "seed-approx-WGS84 + nominatim-crosscheck 3.3km",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-keibul-01",
+        "fieldKey": "description",
+        "valueText": "Only floating national park; last habitat of the Sangai deer.",
+        "valueInt": null,
+        "sourceTitle": "Manipur Tourism — Places to See",
+        "sourceUrl": "https://manipurtourism.gov.in",
+        "scope": "place",
+        "observedAt": null,
+        "reviewState": "approved"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/keibul-lamjao-1.jpg",
+        "caption": "Meitei cultural illustration of the Sangai deer (artwork, not a park photo)",
+        "attribution": "© Haoreima, CC0, via Wikimedia Commons",
+        "license": "CC0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AA_Meitei_popular_cultural_illustration_of_Sangai_deer_(Cervus_eldi_eldi)_pleading_to_save_him_from_being_killed_by_human_beings.jpg"
+      },
+      {
+        "storageKey": "/images/places/keibul-lamjao-2.jpg",
+        "caption": "Sangai antler reference diagram (illustration, not a park photo)",
+        "attribution": "© Haoreima, CC0, via Wikimedia Commons",
+        "license": "CC0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAntlers_of_male_Sangai_(Classical_Meitei_language_term_for_%22brow_antlered_deer%22_species%3B_Cervus_eldi_eldi)_of_3_to_4_years_of_age_(Fig._1)_%26_5_to_6_years_of_age_(Fig._2).jpg"
+      }
+    ]
+  },
+  {
+    "id": "sendra-resort",
+    "name": "Sendra Resort",
+    "aliases": [
+      "Sendra Island Resort"
+    ],
+    "category": "Stay",
+    "district": "Bishnupur",
+    "summary": "Lakeside stay with panoramic phumdi views near Moirang. Official directory lists 13 rooms; current availability unconfirmed — always ask for your exact dates.",
+    "tagline": "Lakeside rooms with panoramic phumdi views near Moirang.",
+    "lat": 24.52,
+    "lng": 93.83,
+    "coordSource": "seed-approx-WGS84 + nominatim-crosscheck 3.6km",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-sendra-01",
+        "fieldKey": "published_capacity",
+        "valueText": "13 rooms",
+        "valueInt": 13,
+        "sourceTitle": "Manipur Tourism — Find Accommodation",
+        "sourceUrl": "https://manipurtourism.gov.in/find-accommodation",
+        "scope": "property",
+        "observedAt": null,
+        "reviewState": "approved"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/sendra-resort-1.jpg",
+        "caption": "Loktak Lake view (Sendra area lake view, not the resort building)",
+        "attribution": "© Rocky Sharma, CC BY-SA 4.0, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3ALoktak_Lake_01.png"
+      },
+      {
+        "storageKey": "/images/places/sendra-resort-2.jpg",
+        "caption": "Loktak Lake from Sendra point, December 2016",
+        "attribution": "© Pawan.Dhall, CC BY-SA 4.0, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3ALoktak_Lake_from_Sendra_point%2C_December_2016.jpg"
+      }
+    ]
+  },
+  {
+    "id": "kangla-fort",
+    "name": "Kangla Fort",
+    "aliases": [
+      "Kangla"
+    ],
+    "category": "Heritage",
+    "district": "Imphal West",
+    "summary": "Ancient seat of Meitei rulers in the heart of Imphal, with holy ponds, ruins and a museum. Holds deep historical and spiritual significance; confirm opening hours before visiting.",
+    "tagline": "Two millennia of Meitei royalty in the heart of Imphal.",
+    "lat": 24.807,
+    "lng": 93.938,
+    "coordSource": "seed-corrected-WGS84 + geocode-crosscheck <1km",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-kangla-01",
+        "fieldKey": "description",
+        "valueText": "Traditional seat of Manipuri rulers until 1891; archaeological site.",
+        "valueInt": null,
+        "sourceTitle": "Manipur Tourism — Places to See",
+        "sourceUrl": "https://manipurtourism.gov.in",
+        "scope": "place",
+        "observedAt": null,
+        "reviewState": "approved"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/kangla-fort-1.jpg",
+        "caption": "Traditional Meitei garden inside Kangla Fort",
+        "attribution": "© Haoreima, CC BY 4.0, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AA_traditional_Meitei_garden_(%22Heikol_Leikol%22_or_%22Heikon_Leikon%22_in_Classical_Meitei_language)_inside_the_Kangla_Fort_(Kangla_Palace)%2C_Imphal%2C_Kangleipak.jpg"
+      },
+      {
+        "storageKey": "/images/places/kangla-fort-2.jpg",
+        "caption": "Heikol Leikol garden, Kangla Palace grounds",
+        "attribution": "© Haoreima, CC BY 4.0, via Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AA_traditional_Meitei_garden_(%22Heikol_Leikol%22_or_%22Heikon_Leikon%22_in_Classical_Meitei_language)_inside_the_Kangla_Palace_(Kangla_Fort)%2C_Imphal%2C_Kangleipak.jpg"
+      }
+    ]
+  },
+  {
+    "id": "ima-keithel",
+    "name": "Ima Keithel",
+    "aliases": [
+      "Khwairamband Bazar",
+      "Mother's Market"
+    ],
+    "category": "Market",
+    "district": "Imphal West",
+    "summary": "The world's largest all-women-run market, where thousands of Imas sell handlooms, produce and crafts. Go with time to browse and cash in hand; ask stallholders before photographing.",
+    "tagline": "Five thousand women vendors. One unforgettable market.",
+    "lat": 24.808,
+    "lng": 93.934,
+    "coordSource": "seed-corrected-WGS84 + geocode-crosscheck <1km",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-ima-01",
+        "fieldKey": "description",
+        "valueText": "All-women market with 3000+ vendors selling handlooms and produce.",
+        "valueInt": null,
+        "sourceTitle": "Manipur Tourism — Places to See",
+        "sourceUrl": "https://manipurtourism.gov.in",
+        "scope": "place",
+        "observedAt": null,
+        "reviewState": "approved"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/ima-keithel-1.jpg",
+        "caption": "Chak-hao black rice and Meitei Cheng in traditional Thumok baskets (market produce)",
+        "attribution": "© Haoreima, CC BY-SA 4.0, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AChak-hao_paddy_(traditional_Meitei_aromatic_purple_rice_AKA_black_rice)_%26_Meitei_Cheng_(traditionally_or_locally_grown_%26_harvested_Meitei_indigenous_paddy_or_white_rice)_stored_in_Thumok_containers_(traditional_Meitei_baskets).jpg"
+      },
+      {
+        "storageKey": "/images/places/ima-keithel-2.jpg",
+        "caption": "Ima Market, Imphal",
+        "attribution": "© Ppyoonus, CC BY-SA 3.0, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AIma_Market%2C_imphal.jpeg"
+      }
+    ]
+  },
+  {
+    "id": "ina-memorial",
+    "name": "INA Memorial Complex",
+    "aliases": [
+      "INA Memorial Moirang"
+    ],
+    "category": "Heritage",
+    "district": "Bishnupur",
+    "summary": "Historic site in Moirang where the INA hoisted the tricolour in 1944, with a war museum. A solemn stop for history travellers on the lake circuit.",
+    "tagline": "Where the tricolour first rose over India in 1944.",
+    "lat": 24.5,
+    "lng": 93.77,
+    "coordSource": "seed-approx-WGS84-unverified",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-ina-01",
+        "fieldKey": "description",
+        "valueText": "Site of first INA flag hoisting on Indian soil (1944); war museum.",
+        "valueInt": null,
+        "sourceTitle": "Manipur Tourism — Places to See",
+        "sourceUrl": "https://manipurtourism.gov.in",
+        "scope": "place",
+        "observedAt": null,
+        "reviewState": "approved"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/ina-memorial-1.jpg",
+        "caption": "INA Memorial, Moirang",
+        "attribution": "© Ppyoonus, CC BY-SA 3.0, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AINA_Memorial%2C_Moirang%2C_Manipur_(12).jpeg"
+      },
+      {
+        "storageKey": "/images/places/ina-memorial-2.jpg",
+        "caption": "INA Memorial grounds, Moirang",
+        "attribution": "© Ppyoonus, CC BY-SA 3.0, via Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AINA_Memorial%2C_Moirang%2C_Manipur_(15).jpeg"
+      }
+    ]
+  },
+  {
+    "id": "shirui-peak",
+    "name": "Shirui Kashong Peak",
+    "aliases": [
+      "Shirui Hills",
+      "Shirui Lily"
+    ],
+    "category": "Trek",
+    "district": "Ukhrul",
+    "summary": "High peak above Ukhrul, exclusive home of the rare Shirui Lily which blooms around May–June. Trek conditions and festival dates change yearly — verify the current edition before planning around it.",
+    "tagline": "A lily that blooms nowhere else on Earth.",
+    "lat": 25.12,
+    "lng": 94.38,
+    "coordSource": "seed-approx-WGS84 + nominatim-crosscheck 7.9km",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-shirui-01",
+        "fieldKey": "description",
+        "valueText": "Endemic habitat of the Shirui Lily; peak height 2835 m.",
+        "valueInt": null,
+        "sourceTitle": "Ukhrul District — Tourist Places",
+        "sourceUrl": null,
+        "scope": "place",
+        "observedAt": null,
+        "reviewState": "pending_review"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/shirui-peak-1.jpg",
+        "caption": "Hilltop village landscape, Ukhrul hills (representative scenery)",
+        "attribution": "© Vis M, CC BY 2.0, via Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3AAnother_look_at_the_hilltop_village-_love_this_scene!_(50016325947).jpg"
+      },
+      {
+        "storageKey": "/images/places/shirui-peak-2.jpg",
+        "caption": "Wild lily bloom in the hills — Shirui Lily blooms May–June (Dzukou Lily pictured)",
+        "attribution": "© Gannu03, CC BY-SA 4.0, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3ADzukou_Lily_01.jpg"
+      }
+    ]
+  },
+  {
+    "id": "dzukou-valley",
+    "name": "Dzukou Valley",
+    "aliases": [
+      "Dzuko Valley"
+    ],
+    "category": "Trek",
+    "district": "Senapati",
+    "summary": "Green valley meadows on the Manipur–Nagaland border, popular for multi-day treks. Access, permits and trail state vary by season — confirm with local guides and never trek alone without informing someone.",
+    "tagline": "Emerald meadows straddling the Manipur–Nagaland hills.",
+    "lat": 25.6,
+    "lng": 94.05,
+    "coordSource": "seed-approx-WGS84 + nominatim-crosscheck 5.9km",
+    "isDemo": false,
+    "claims": [
+      {
+        "id": "c-dzukou-01",
+        "fieldKey": "description",
+        "valueText": "Border valley trekking meadows between Manipur and Nagaland.",
+        "valueInt": null,
+        "sourceTitle": "Project observation — verify with operator",
+        "sourceUrl": null,
+        "scope": "place",
+        "observedAt": null,
+        "reviewState": "pending_review"
+      }
+    ],
+    "photos": [
+      {
+        "storageKey": "/images/places/dzukou-valley-1.jpg",
+        "caption": "Dzukou Valley on the Manipur–Nagaland border",
+        "attribution": "© UnpetitproleX, CC BY-SA 4.0, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3ABreathtaking_beauty_of_Dzukou_Valley_in_Manipur-Nagaland_border_(edit).jpg"
+      },
+      {
+        "storageKey": "/images/places/dzukou-valley-2.jpg",
+        "caption": "Dzukou Lily bloom in season",
+        "attribution": "© Gannu03, CC BY-SA 4.0, via Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourcePage": "https://commons.wikimedia.org/wiki/File%3ADzukou_Lily_01.jpg"
+      }
+    ]
+  }
+]

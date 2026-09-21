@@ -1,0 +1,49 @@
+name,district,category,status,candidate_source,note
+Loktak Lake,Bishnupur,Lake,verified,Manipur Tourism — Places to See,seeded with 2 CC photos
+Keibul Lamjao National Park,Bishnupur,National Park,verified,Manipur Tourism — Places to See,seeded with 2 CC0 illustrations
+Sendra Resort,Bishnupur,Stay,verified,Manipur Tourism — Find Accommodation (13 rooms listed),seeded with 2 CC lake views
+Kangla Fort,Imphal West,Heritage,verified,Manipur Tourism — Places to See,seeded with 2 CC garden photos
+Ima Keithel,Imphal West,Market,verified,Manipur Tourism — Places to See,seeded with 2 CC market photos
+INA Memorial Complex,Bishnupur,Heritage,verified,Manipur Tourism — Places to See,seeded with 2 CC memorial photos
+Shirui Kashong Peak,Ukhrul,Trek,verified-pending-review,Ukhrul District — Tourist Places,seeded with 2 CC hill photos
+Dzukou Valley,Senapati,Trek,verified-pending-review,Project observation — verify with operator,seeded with 2 CC valley photos
+Shaheed Minar & Bir Tikendrajit Park,Imphal West,Heritage,queued,User district dump — needs source URL + field excerpt,
+Nupi Lal Memorial Complex,Imphal West,Heritage,queued,User district dump — needs source URL + field excerpt,
+Manipur State Museum,Imphal West,Museum,queued,User district dump — needs source URL + field excerpt,
+Manipur Zoological Gardens,Imphal West,Wildlife,queued,User district dump — needs source URL + field excerpt,
+Cheirao Ching,Imphal West,Viewpoint,queued,User district dump — needs source URL + field excerpt,
+Langthabal Old Palace,Imphal West,Heritage,queued,User district dump — needs source URL + field excerpt,
+Shree Govindajee Temple,Imphal East,Temple,queued,User district dump — needs source URL + field excerpt,
+Three Mothers Art Gallery,Imphal East,Art,queued,User district dump — needs source URL + field excerpt,
+Khonghampat Orchidarium,Imphal East,Nature,queued,User district dump — needs source URL + field excerpt,
+Khuman Lampak Sports Complex,Imphal East,Sports,queued,User district dump — needs source URL + field excerpt,
+Yaralpat View Point,Imphal East,Viewpoint,queued,User district dump — needs source URL + field excerpt,
+Jiribam Border Eco-Tourism,Jiribam,Nature,queued,User district dump — needs source URL + field excerpt,
+Loukoi Pat Lake,Bishnupur,Lake,queued,User district dump — needs source URL + field excerpt,
+Phubala Resort,Bishnupur,Stay,queued,User district dump — needs source URL + field excerpt + consent,
+Ancient Vishnu Temple,Bishnupur,Temple,queued,User district dump — needs source URL + field excerpt,
+Khangkhui Mangsor Cave,Ukhrul,Cave,queued,User district dump — needs source URL + field excerpt,
+Nillai Tea Estate,Ukhrul,Nature,queued,User district dump — needs source URL + field excerpt,
+Kachouphung Lake,Kamjong,Lake,queued,User district dump — needs source URL + field excerpt,
+Sadu Chiru Waterfalls,Kangpokpi,Waterfall,queued,User district dump — needs source URL + field excerpt,
+Singda Dam,Kangpokpi,Dam,queued,User district dump — needs source URL + field excerpt,
+Willong Khullen,Senapati,Heritage,queued,User district dump — needs source URL + field excerpt,
+Yangkhullen,Senapati,Village,queued,User district dump — needs source URL + field excerpt,
+Koubru Peak,Kangpokpi,Trek,queued,User district dump — needs source URL + field excerpt,
+Tharon Cave,Tamenglong,Cave,queued,User district dump — needs source URL + field excerpt,
+Barak Waterfalls,Tamenglong,Waterfall,queued,User district dump — needs source URL + field excerpt,
+Bunning Meadow,Tamenglong,Meadow,queued,User district dump — needs source URL + field excerpt,
+Zeilad Lake,Tamenglong,Wetland,queued,User district dump — needs source URL + field excerpt,
+Noney Railway Bridge,Noney,Landmark,queued,User district dump — needs source URL + field excerpt,
+Khuga Dam,Churachandpur,Dam,queued,User district dump — needs source URL + field excerpt,
+Ngaloi Waterfall,Churachandpur,Waterfall,queued,User district dump — needs source URL + field excerpt,
+Tipaimukh Confluence,Pherzawl,Nature,queued,User district dump — needs source URL + field excerpt,
+Khongjom War Memorial,Thoubal,Heritage,queued,User district dump — needs source URL + field excerpt,
+Kakching Garden,Kakching,Park,queued,User district dump — needs source URL + field excerpt,
+Waithou Lake,Thoubal,Lake,queued,User district dump — needs source URL + field excerpt,
+Ikop Pat Wetland,Thoubal,Wetland,queued,User district dump — needs source URL + field excerpt,
+Moreh Border Town,Tengnoupal,Border,queued,User district dump — needs source URL + field excerpt,
+Yangoupokpi-Lokchao Wildlife Sanctuary,Tengnoupal,Wildlife,queued,User district dump — needs source URL + field excerpt,
+Tengnoupal Hill Station,Tengnoupal,Viewpoint,queued,User district dump — needs source URL + field excerpt,
+Andro Heritage Village,Imphal East,Village,queued,User district dump — needs source URL + field excerpt,
+Khuga Dam viewpoint duplicate-check,Churachandpur,Dam,rejected-duplicate,Duplicate of Khuga Dam row — do not double-count,

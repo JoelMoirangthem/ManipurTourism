@@ -1,0 +1,140 @@
+// Prisma schema — Phase 1 hardening. App runs on seed-file fallback until
+// DATABASE_URL points at a Postgres (+PostGIS, applied via raw SQL migration).
+// Maps to outputs/manipur-tourism-docs/data-model.md canonical names.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Place {
+  id           String    @id @default(cuid())
+  name         String
+  aliases      String[]
+  category     String
+  district     String
+  summary      String
+  lat          Float?
+  lng          Float?
+  coordSource  String?
+  isDemo       Boolean   @default(false)
+  version      Int       @default(1)
+  listings     Listing[]
+  claims       Claim[]
+  media        MediaAsset[]
+}
+
+model Listing {
+  id        String   @id @default(cuid())
+  placeId   String
+  place     Place    @relation(fields: [placeId], references: [id])
+  type      String
+  name      String
+  state     String   @default("directory_only")
+  isDemo    Boolean  @default(false)
+  version   Int      @default(1)
+  inquiries Inquiry[]
+}
+
+model Source {
+  id          String   @id @default(cuid())
+  title       String
+  url         String?
+  publisher   String
+  category    String
+  fetchedAt   DateTime
+  publishedAt DateTime?
+  digest      String?
+  claims      Claim[]
+}
+
+model Claim {
+  id          String    @id @default(cuid())
+  entityType  String
+  entityId    String
+  fieldKey    String
+  valueText   String?
+  valueInt    Int?
+  sourceId    String
+  source      Source    @relation(fields: [sourceId], references: [id])
+  scope       String    @default("place")
+  observedAt  DateTime?
+  validFrom   DateTime?
+  validUntil  DateTime?
+  expiresAt   DateTime?
+  reviewState String    @default("pending_review")
+  version     Int       @default(1)
+}
+
+model MediaAsset {
+  id         String   @id @default(cuid())
+  placeId    String
+  place      Place    @relation(fields: [placeId], references: [id])
+  storageKey String
+  width      Int?
+  height     Int?
+  attribution String
+  license    String
+  consent    Boolean  @default(false)
+  sourceUrl  String?
+  digest     String?
+  moderation String   @default("pending")
+  createdAt  DateTime @default(now())
+}
+
+model Inquiry {
+  id        String    @id @default(cuid())
+  listingId String
+  listing   Listing   @relation(fields: [listingId], references: [id])
+  visitorId String
+  checkIn   DateTime?
+  checkOut  DateTime?
+  partySize Int
+  state     String    @default("open")
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  messages  Message[]
+}
+
+model Message {
+  id             String   @id @default(cuid())
+  inquiryId      String
+  inquiry        Inquiry  @relation(fields: [inquiryId], references: [id])
+  senderId       String
+  sequence       Int
+  originalText   String
+  language       String?
+  script         String?
+  acceptedAt     DateTime @default(now())
+  translations   Translation[]
+}
+
+model Translation {
+  id          String   @id @default(cuid())
+  messageId   String
+  message     Message  @relation(fields: [messageId], references: [id])
+  targetLang  String
+  targetScript String?
+  provider    String
+  model       String?
+  version     String?
+  text        String
+  quality     String   @default("machine_unreviewed")
+  createdAt   DateTime @default(now())
+}
+
+model PhraseCard {
+  id         String   @id @default(cuid())
+  intent     String
+  sourceText String
+  language   String
+  script     String?
+  text       String
+  reviewers  String[]
+  reviewDate DateTime?
+  version    Int      @default(1)
+}
