@@ -1,17 +1,17 @@
+"use client";
+
 // Actor switcher — makes the identity boundary visible instead of hidden.
 //
 // Because roles are self-asserted in the demo, the UI must say so. A visitor
 // always knows whether they are browsing, replying as a host, or moderating,
 // and that this is not authentication.
 
-"use client";
-
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 
 const ROLES = [
   { id: "visitor-demo", label: "Visitor" },
-  { id: "provider-demo", label: "Provider" },
-  { id: "reviewer-demo", label: "Reviewer" },
+  { id: "authority-demo", label: "Local Authority" },
+  { id: "admin-demo", label: "Admin" },
 ];
 
 export const ACTOR_COOKIE = "mt_actor";
@@ -22,14 +22,11 @@ export function readActorCookieClient(): string {
   return m ? decodeURIComponent(m[1]) : "visitor-demo";
 }
 
-export function ActorSwitcher() {
-  const [role, setRole] = useState("visitor-demo");
-  const [ready, setReady] = useState(false);
+const noopSubscribe = () => () => {};
 
-  useEffect(() => {
-    setRole(readActorCookieClient());
-    setReady(true);
-  }, []);
+export function ActorSwitcher() {
+  const isClient = useSyncExternalStore(noopSubscribe, () => true, () => false);
+  const [role, setRole] = useState(readActorCookieClient);
 
   function choose(id: string) {
     setRole(id);
@@ -39,7 +36,7 @@ export function ActorSwitcher() {
     window.location.reload();
   }
 
-  if (!ready) return <div className="h-7 w-[190px]" />;
+  if (!isClient) return <div className="h-7 w-[190px]" />;
 
   return (
     <div className="flex items-center gap-2 rounded-full border border-[#0B3D2E]/15 bg-white py-1 pr-1 pl-3 shadow-sm">

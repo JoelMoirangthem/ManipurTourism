@@ -123,6 +123,69 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* Intent Router — 3 direct primary user pathways */}
+      <section className="mt-8 grid gap-4 sm:grid-cols-3" aria-label="Primary destinations">
+        <Link
+          href="/places"
+          className="group relative flex flex-col justify-between rounded-2xl border border-[#0B3D2E]/10 bg-white p-6 shadow-sm transition hover:border-[#0B3D2E]/30 hover:shadow-md"
+        >
+          <div>
+            <span className="inline-flex rounded-full bg-[#EEF5F1] px-2.5 py-1 text-xs font-semibold text-[#0B3D2E]">
+              Directory · {places.length} Places
+            </span>
+            <h2 className="font-display mt-3 text-xl font-semibold text-[#0B3D2E] group-hover:text-[#0E5A42]">
+              Explore Destinations →
+            </h2>
+            <p className="mt-1 text-xs leading-5 text-[#5D746B]">
+              Discover authentic Meitei heritage, pristine wetlands, prehistoric caves, and hill country across all districts.
+            </p>
+          </div>
+          <p className="mt-4 text-xs font-semibold text-[#C19A4B] uppercase tracking-wider">
+            Browse catalogue
+          </p>
+        </Link>
+
+        <Link
+          href="/nearby"
+          className="group relative flex flex-col justify-between rounded-2xl border border-[#0B3D2E]/10 bg-white p-6 shadow-sm transition hover:border-[#0B3D2E]/30 hover:shadow-md"
+        >
+          <div>
+            <span className="inline-flex rounded-full bg-[#FBF6E9] px-2.5 py-1 text-xs font-semibold text-[#7a5f22]">
+              GPS Radar & Navigation
+            </span>
+            <h2 className="font-display mt-3 text-xl font-semibold text-[#0B3D2E] group-hover:text-[#0E5A42]">
+              What&rsquo;s Around You →
+            </h2>
+            <p className="mt-1 text-xs leading-5 text-[#5D746B]">
+              Find tourist places nearest your live location with adjustable 5–30 km radius and instant turn-by-turn driving directions.
+            </p>
+          </div>
+          <p className="mt-4 text-xs font-semibold text-[#C19A4B] uppercase tracking-wider">
+            Open radar map
+          </p>
+        </Link>
+
+        <Link
+          href="/messages"
+          className="group relative flex flex-col justify-between rounded-2xl border border-[#0B3D2E]/10 bg-white p-6 shadow-sm transition hover:border-[#0B3D2E]/30 hover:shadow-md"
+        >
+          <div>
+            <span className="inline-flex rounded-full bg-[#EEF5F1] px-2.5 py-1 text-xs font-semibold text-[#0B3D2E]">
+              Role-Aware Communication
+            </span>
+            <h2 className="font-display mt-3 text-xl font-semibold text-[#0B3D2E] group-hover:text-[#0E5A42]">
+              Inquiries & Messages →
+            </h2>
+            <p className="mt-1 text-xs leading-5 text-[#5D746B]">
+              Ask questions directly to local operators and authorities with structured phrase cards and verified expiry quotes.
+            </p>
+          </div>
+          <p className="mt-4 text-xs font-semibold text-[#C19A4B] uppercase tracking-wider">
+            View conversations
+          </p>
+        </Link>
+      </section>
+
       <section className="mt-6 grid gap-3 sm:grid-cols-3" aria-label="Catalogue statistics">
         {[
           { label: "Places in the catalogue", value: places.length, sub: "Curated records" },

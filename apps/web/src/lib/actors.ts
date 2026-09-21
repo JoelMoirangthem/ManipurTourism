@@ -10,7 +10,7 @@
 
 import { cookies } from "next/headers";
 
-export type Role = "visitor" | "provider" | "reviewer";
+export type Role = "visitor" | "authority" | "admin" | "provider" | "reviewer";
 
 export interface Actor {
   id: string;
@@ -24,8 +24,10 @@ export const ACTOR_COOKIE = "mt_actor";
 
 const KNOWN: Record<string, Omit<Actor, "unverified">> = {
   "visitor-demo": { id: "visitor-demo", role: "visitor", displayName: "Visitor (demo)" },
-  "provider-demo": { id: "provider-demo", role: "provider", displayName: "Sendra Resort (demo host)" },
-  "reviewer-demo": { id: "reviewer-demo", role: "reviewer", displayName: "Moderator (demo)" },
+  "authority-demo": { id: "authority-demo", role: "authority", displayName: "Local Authority (demo)" },
+  "provider-demo": { id: "provider-demo", role: "authority", displayName: "Local Authority (Sendra Host demo)" },
+  "admin-demo": { id: "admin-demo", role: "admin", displayName: "Admin Moderator (demo)" },
+  "reviewer-demo": { id: "reviewer-demo", role: "admin", displayName: "Admin Moderator (demo)" },
 };
 
 /**
@@ -53,7 +55,10 @@ export async function resolveActor(override?: string | null): Promise<Actor> {
 
 /** Throws a Response-shaped error when the role is insufficient. */
 export function requireRole(actor: Actor, ...allowed: Role[]): void {
-  if (!allowed.includes(actor.role)) {
+  const norm = (r: Role) => (r === "reviewer" ? "admin" : r === "provider" ? "authority" : r);
+  const normalizedActorRole = norm(actor.role);
+  const normalizedAllowed = allowed.map(norm);
+  if (!normalizedAllowed.includes(normalizedActorRole)) {
     throw new ForbiddenError(actor, allowed);
   }
 }

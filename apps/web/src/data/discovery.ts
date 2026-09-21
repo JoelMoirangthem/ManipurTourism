@@ -1,8 +1,11 @@
 export type Collection = { slug: string; title: string; blurb: string; district?: string; category?: string; href: string };
 export const COLLECTIONS: Collection[] = [
-  { slug: "lakeside", title: "Lakeside Manipur", blurb: "Including Loktak, Keibul Lamjao and Sendra — phumdis, Sangai habitat, lake views.", district: "Bishnupur", href: "/places?district=Bishnupur" },
-  { slug: "heritage-imphal", title: "Heritage Imphal", blurb: "Including Kangla Fort and Ima Keithel — Meitei royalty and living markets.", district: "Imphal West", href: "/places?district=Imphal%20West" },
-  { slug: "trek-country", title: "Trek country", blurb: "Shirui Peak and Dzukou Valley — lilies in May-Jun, meadows Jun-Sep.", category: "Trek", href: "/places?category=Trek" },
+  { slug: "lakeside", title: "Lakeside Manipur", blurb: "Loktak, Keibul Lamjao, Sendra and Takmu — phumdis, Sangai deer habitat, and calm waters.", district: "Bishnupur", href: "/places?district=Bishnupur" },
+  { slug: "heritage-imphal", title: "Heritage Imphal", blurb: "Kangla Fort, Ima Keithel, Govindajee Temple and Shaheed Minar — royalty, living markets and Meitei history.", district: "Imphal West", href: "/places?district=Imphal%20West" },
+  { slug: "war-memory", title: "War Memory Trail", blurb: "Imphal War Cemetery, Red Hill Peace Memorial, and Khongjom — WWII battlegrounds and Anglo-Manipur bravery.", href: "/places?category=Heritage" },
+  { slug: "faith-craft", title: "Faith & Living Craft", blurb: "Andro Heritage Village, Mutua Museum, Kaina and Bijoy Govindaji — ancient pottery and devotional traditions.", href: "/places?category=Culture" },
+  { slug: "caves-waterfalls", title: "Caves & Waterfalls", blurb: "Khangkhui Lime Caves, Tharon Cave, Sadu Chiru and Seven Barak Waterfalls — wild subterranean and canyon wonder.", href: "/places?category=Nature" },
+  { slug: "trek-country", title: "Trek & High Country", blurb: "Shirui Peak, Dzukou Valley, and Singda Dam — Shirui lilies, alpine meadows, and highland breezes.", category: "Trek", href: "/places?category=Trek" },
 ];
 
 export type Season = { name: string; months: string; temp: string; note: string };

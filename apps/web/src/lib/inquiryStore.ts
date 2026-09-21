@@ -208,7 +208,7 @@ export interface ScopeOptions {
  * provider→listing ownership table.
  */
 export function listingsFor(actor: Actor): string[] {
-  if (actor.role === "provider") return ["directory", "sendra-resort", "loktak-lake", "kangla-fort"];
+  if (actor.role === "provider" || actor.role === "authority") return ["directory", "sendra-resort", "loktak-lake", "kangla-fort"];
   return [];
 }
 
@@ -224,8 +224,8 @@ export async function listInquiries(opts: ScopeOptions): Promise<StoredInquiry[]
   return all
     .filter((i) => {
       if (actor.role === "visitor") return i.visitorId === actor.id;
-      if (actor.role === "provider") return owned.some((l) => i.providerListingIds.includes(l));
-      return true; // reviewer / moderator
+      if (actor.role === "provider" || actor.role === "authority") return owned.some((l) => i.providerListingIds.includes(l));
+      return true; // reviewer / admin / moderator
     })
     .filter((i) => (!opts.placeId || i.placeId === opts.placeId) && (!opts.state || i.state === opts.state))
     .sort((a, b) => (a.createdAt < b.createdAt ? 1 : -1));
@@ -287,15 +287,16 @@ export async function postMessage(
   if (!inquiry) throw new Error("Inquiry not found");
   if (inquiry.state === "closed") throw new Error("Inquiry is closed");
 
-  const role: "visitor" | "provider" = actor.role === "provider" ? "provider" : "visitor";
+  const isProviderOrAuth = actor.role === "provider" || actor.role === "authority";
+  const role: "visitor" | "provider" = isProviderOrAuth ? "provider" : "visitor";
   if (role === "visitor" && inquiry.visitorId !== actor.id) {
     throw new ScopeDenied("This thread belongs to another visitor.");
   }
-  if (role === "provider" && !listingsFor(actor).some((l) => inquiry.providerListingIds.includes(l))) {
+  if (isProviderOrAuth && !listingsFor(actor).some((l) => inquiry.providerListingIds.includes(l))) {
     throw new ScopeDenied("This thread is not addressed to one of your listings.");
   }
-  if (input.availability && role !== "provider") {
-    throw new Error("Only the provider can post an availability report.");
+  if (input.availability && !isProviderOrAuth) {
+    throw new Error("Only the provider or authority can post an availability report.");
   }
 
   const now = new Date();

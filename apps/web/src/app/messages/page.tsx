@@ -26,12 +26,8 @@ export default function MessagesPage() {
   const [rows, setRows] = useState<Row[]>([]);
   const [names, setNames] = useState<Record<string, string>>({});
   const [loading, setLoading] = useState(true);
-  const [role, setRole] = useState("visitor-demo");
+  const [role] = useState(readActorCookieClient);
   const [filter, setFilter] = useState("");
-
-  useEffect(() => {
-    setRole(readActorCookieClient());
-  }, []);
 
   useEffect(() => {
     const ctrl = new AbortController();
@@ -52,7 +48,8 @@ export default function MessagesPage() {
 
   const shown = filter ? rows.filter((r) => r.state === filter) : rows;
   const copy = roleCopy(role);
-  const isProvider = role === "provider-demo" || role === "provider";
+  const isProvider =
+    role === "authority-demo" || role === "authority" || role === "provider-demo" || role === "provider";
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-10 sm:px-6">

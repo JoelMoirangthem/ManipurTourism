@@ -27,8 +27,8 @@ const NAV = [
 ];
 const MORE_NAV = [
   { href: "/inquire", label: "Inquire" },
-  { href: "/inbox", label: "Inbox" },
-  { href: "/review", label: "Review" },
+  { href: "/dashboard/authority", label: "Authority Dashboard" },
+  { href: "/dashboard/admin", label: "Admin Console" },
 ];
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

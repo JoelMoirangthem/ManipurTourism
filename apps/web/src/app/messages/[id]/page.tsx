@@ -140,13 +140,13 @@ export default async function ThreadView({ params }: { params: Promise<{ id: str
         ))}
       </div>
 
-      {actor.role === "provider" && <ReplyForm inquiryId={id} />}
+      {(actor.role === "provider" || actor.role === "authority") && <ReplyForm inquiryId={id} />}
 
       <Disclaimer className="mt-6" />
 
       <div className="mt-4 flex flex-wrap gap-3 text-sm">
-        <Link href="/inbox" className="underline">
-          Provider view
+        <Link href="/dashboard/authority" className="underline">
+          Authority dashboard
         </Link>
         <Link href={`/inquire?placeId=${inquiry.placeId}`} className="underline">
           Ask again
